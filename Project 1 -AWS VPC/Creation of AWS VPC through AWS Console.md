@@ -2,7 +2,7 @@
 + <b>Email:</b> telugudevopsguru@gmail.com</br>
 + <b>Website:</b> https://www.telugudevopsguru.com/</br>
 + <b>Mobile:</b>+91 7893121036</br>
-+ <b>Description:</b>Creation AWS VPC through Terraform.</br>
++ <b>Description:</b>Creation AWS VPC through AWS Console.</br>
 
 # Setting up Customized VPC.
 ![Lab - Setting up Customized VPC in telugu - Moole Muralidhara Reddy - Telugu Devops Guru](https://github.com/telugudevopsguru/terraform/blob/ec1e15c1c63e87cf5bf3c19c53076d7c0e0c4ffc/images/Creation%20of%20AWS%20VPC%20through%20AWS%20Console%20in%20Terraform%20-%20Terraform%20-%20Moole%20Muralidhara%20Reddy.png)
@@ -54,7 +54,19 @@ Route Entry
 Destination : 0.0.0.0/0
 Target : Internet Gateway ID
 ```
+## Step 8: Create the NAT Gateway in the public subnet
+```xml
+Murali-VPC-Nat-Gateway
+```
+## Step 9: Add the Nat Gateway route to the Private RouteTable.
 
-## Step 8: Launch the Linux EC2 instance both in the Public and Private Subnet.
+```xml
+Route Entry
+
+Destination : 0.0.0.0/0
+Target : NAT Gateway ID
+```
+
+## Step 10: Launch the Linux EC2 instance both in the Public and Private Subnet.
 
 #### Congratulations! You have successfully set up the AWS VPC.
