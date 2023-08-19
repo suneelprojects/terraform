@@ -40,7 +40,7 @@ Name: Murali-VPC-IGW
 Name: Murali-VPC-Public-RouteTable
 ```
 
-## Step 6: Create a route table and name it Murali-VPC-Private-RouteTable and attach the private,app,data subnets to this RouteTable.
+## Step 6: Create a route table and name it Murali-VPC-Private-RouteTable and attach the private subnets to this RouteTable.
 
 ```xml
 Name: Murali-VPC-Private-RouteTable
