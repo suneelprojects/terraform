@@ -10,9 +10,8 @@ resource "aws_iam_group" "developers" {
 }
 
 
-
 resource "aws_instance" "web" {
-  ami           = "ami-0453898e98046c639"
+  ami           = "ami-0e0f3d4588f992288"
   instance_type = var.instnace-type
 
   tags = {
