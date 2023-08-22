@@ -14,6 +14,7 @@ resource "aws_iam_group" "developers" {
 resource "aws_instance" "web" {
   ami           = "ami-0453898e98046c639"
   instance_type = var.instnace-type
+subnet_id = "subnet-0a1a54031bf95d8e4"
 
   tags = {
     Name = "HelloWorld"
