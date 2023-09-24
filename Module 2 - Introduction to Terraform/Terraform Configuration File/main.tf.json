@@ -1,0 +1,24 @@
+{
+  "terraform": {
+    "required_version": ">= 0.12"
+  },
+  "provider": {
+    "aws": {
+      "access_key": "AKIAWIBQPDIZ4SHKBHWF",
+      "secret_access_key": "V1ZdRlOdD5k9EC2PwPKGbEBvx+Mld9ZLOyvK8rix",
+      "region": "us-east-1"
+    }
+  },
+  "resource": {
+    "aws_instance": {
+      "example_ec2_instance": {
+        "ami": "ami-0c94855ba95c71c99",
+        "instance_type": "t2.micro",
+        "subnet_id": "subnet-0422aa31d4c62de2c",
+        "tags": {
+          "Name": "ExampleEC2Instance"
+        }
+      }
+    }
+  }
+}

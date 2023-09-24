@@ -1,0 +1,14 @@
+demo_vpccidr               = "12.0.0.0/16"
+demo_public-subnets        = ["12.0.1.0/24", "12.0.2.0/24"]
+demo_private-subnets       = ["12.0.50.0/24", "12.0.51.0/24"]
+demo_azs                   = ["us-east-1a", "us-east-1b"]
+demo_publicroute           = "0.0.0.0/0"
+demo_privateroute          = "0.0.0.0/0"
+demo_ingress-ports         = [22, 443, 80]
+demo_egress-ports          = [0]
+demo_vpcname               = "Murali-VPC"
+demo_publicsubnet-name     = ["murali-public-subnet-1a", "murali-public-subnet-1b"]
+demo_privatesubnet-name    = ["privatesubnet-1 ", "privatesubnet-2"]
+demo_natgateway-name       = "natgateway"
+demo_internet-gateway-name = "Internetgateway"
+demo_securitygroup-name    = "Securitygroup"

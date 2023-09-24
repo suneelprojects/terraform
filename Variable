@@ -1,0 +1,32 @@
+Environment variables:
+------------------
+For Linux
+export TF_VAR_instance_type="t2.micro"
+echo $TF_VAR_instancetype
+
+For Windows
+setx TF_VAR_instance_type="t2.micro"
+echo %instancetype%
+
+
+Command Line Flags:
+------------------
+terraform plan -var="instance_type=t2.micro"
+
+From a File:
+------------
+# dev.tfvars
+
+instance_type = "t2.micro"
+ami_id = "ami-0123456789abcdef0"
+
+
+terraform apply --var-file="dev.tfvars"
+
+
+Variable Defaults:
+------------------
+
+variable "instance_type" {
+default = "t2.micro"
+ }
