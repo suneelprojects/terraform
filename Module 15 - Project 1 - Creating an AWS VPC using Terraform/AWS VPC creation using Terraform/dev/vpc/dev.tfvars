@@ -1,0 +1,11 @@
+dev_vpccidr = "10.100.0.0/16"
+dev_vpcname = "Murali-VPC"
+dev_public_subnets        = ["10.100.8.0/21", "10.100.16.0/21"]
+dev_private_subnets       = ["10.100.80.0/21", "10.100.88.0/21"]
+dev_azs                   = ["us-east-1a", "us-east-1b"]
+dev_publicsubnet_name     = ["murali-public-subnet-1a", "murali-public-subnet-1b"]
+dev_privatesubnet_name    = ["murali-private-subnet-1a ", "murali-private-subnet-1b"]
+dev_internet_gateway_name = "Murali-VPC-IGW"
+dev_natgateway_name = "Murali-VPC-NGW"
+dev_publicroute = "0.0.0.0/0"
+dev_privateroute = "0.0.0.0/0"
